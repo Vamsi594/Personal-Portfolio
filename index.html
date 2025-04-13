@@ -3,243 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio website of Kummari Vamsi - Developer, AI Engineer, and Cloud Enthusiast">
-    <title>Kummari Vamsi - Portfolio</title>
-    
-    <!-- Preload and resource hints -->
-    <link rel="preload" href="style.css" as="style">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preload" href="script.js" as="script">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    
-    <!-- Load Font Awesome asynchronously -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'">
-    <!-- Add fallback in case JS is disabled -->
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></noscript>
-    <!-- Defer non-critical JS -->
-    <script src="./script.js" defer></script>
-    
-    <!-- SEO metadata -->
-    <meta name="keywords" content="portfolio, web development, programming, Java, python, javascript, developer, AI engineer, cloud computing">
+    <meta name="description" content="Portfolio of Kummari Vamsi - Full Stack Developer and AI Enthusiast specializing in Java, Web Development, and AI solutions">
+    <meta name="keywords" content="Kummari Vamsi, Web Developer, Java Developer, AI Developer, Portfolio">
     <meta name="author" content="Kummari Vamsi">
-    <meta name="theme-color" content="#0f0f2d">
-    
-    <!-- Open Graph / Social Media tags -->
-    <meta property="og:title" content="Kummari Vamsi - Portfolio">
-    <meta property="og:description" content="AI Engineer and Full Stack Developer portfolio showcasing projects and skills">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://vamsikummari.com">
-    <meta property="og:image" content="images/profile.jpg">
-    
-    <!-- Twitter Card tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Kummari Vamsi - Portfolio">
-    <meta name="twitter:description" content="AI Engineer and Full Stack Developer portfolio">
-    
-    <!-- Security headers -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data:; font-src 'self' https://cdnjs.cloudflare.com;">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
-    
-    <!-- Structured data for SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Kummari Vamsi",
-        "url": "https://vamsikummari.com",
-        "jobTitle": "AI Engineer and Full Stack Developer",
-        "alumniOf": {
-            "@type": "CollegeOrUniversity",
-            "name": "Computer Science and Engineering"
-        },
-        "knowsAbout": ["Java", "Web Development", "Cloud Computing", "AI", "Machine Learning"],
-        "sameAs": [
-            "https://github.com/Vamsi594",
-            "https://linkedin.com/in/vamsi-kummari-74577b280"
-        ]
-    }
-    </script>
+    <title>Kummari Vamsi - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 </head>
-<body class="dark-mode">
-    <!-- Accessibility skip link -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <!-- Page loading indicator -->
-    <div class="page-loader" id="pageLoader">
-        <div class="loader-spinner" aria-label="Loading content"></div>
-    </div>
-
-    <!-- Scroll Indicator -->
-    <div class="scroll-indicator" id="scrollIndicator" aria-hidden="true"></div>
-
-    <!-- Scroll to Top Button -->
-    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
-        <i class="fas fa-arrow-up" aria-hidden="true"></i>
-    </button>
-
-    <!-- Floating Background Elements -->
-    <div class="floating-background" id="floating-background" aria-hidden="true"></div>
-    
-    <!-- Header Navigation -->
-    <header role="banner">
-        <nav role="navigation" aria-label="Main navigation">
-            <h1 class="logo">Kummari Vamsi</h1>
-            <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Toggle navigation menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#home" aria-current="page">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><button id="themeToggle" aria-label="Toggle dark/light theme">☀️</button></li>
-            </ul>
+<body>
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="nav-content">
+                <div class="logo">Kummari Vamsi</div>
+                <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#home" aria-current="page">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <main id="main-content" role="main">
-        <!-- Home Section -->
-        <section id="home" class="animation-container">
-            <div class="home-content">
-                <div class="neon-text-container">
-                    <h1>Hi, I'm <span class="highlight-text">Kummari Vamsi</span></h1>
-                    <p class="typing-text">A passionate developer with expertise in <span class="neon-highlight">Java</span>, <span class="neon-highlight">Web Development</span>, and <span class="neon-highlight">AI</span>.</p>
-                </div>
-                <div class="neon-shape"></div>
-                <a href="#projects" class="btn">View My Work</a>
-                <div class="neon-grid"></div>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Kummari Vamsi</span></h1>
+                <p class="title">A passionate developer with expertise in Java, Web Development and AI</p>
+                <a href="#contact" class="cta-btn" aria-label="Get in touch">Get In Touch</a>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="animation-container">
-            <h2>About Me</h2>
-            <div class="about-container">
-                <div class="about-image">
-                    <div class="profile-img-placeholder">
-                        <div class="neon-bg profile-img" style="background: radial-gradient(circle, #00eeff, #ff00c8); display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
-                            <i class="fas fa-user" style="font-size: 5rem; color: white; text-shadow: 0 0 10px #fff;"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-content">
-                    <p class="about-intro"><span class="highlight">Computer Science professional</span> with a passion for programming and cloud technologies.</p>
-                    <p>I enjoy solving complex problems and creating efficient solutions. My journey in technology has been driven by curiosity and a desire to make an impact through innovative solutions.</p>
-                    <div class="about-details">
-                        <div class="about-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>B.Tech in Computer Science and Engineering</span>
-                        </div>
-                        <div class="about-item">
-                            <i class="fas fa-laptop-code"></i>
-                            <span>Full-Stack Developer</span>
-                        </div>
-                        <div class="about-item">
-                            <i class="fas fa-cloud"></i>
-                            <span>Cloud Enthusiast</span>
-                        </div>
-                    </div>
-                    <p>When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and expanding my knowledge in the ever-evolving tech landscape.</p>
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Computer Science professional with expertise in full-stack development and cloud technologies. I specialize in building scalable web applications and implementing AI solutions to solve real-world challenges.</p>
+                    <p>My technical journey combines a passion for elegant code architecture with innovative problem-solving, creating efficient systems that bridge user needs with technical implementation.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section - Optimize content loading -->
-        <section id="projects" class="animation-container">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <div class="project-img-container">
-                    <div class="neon-bg project-img" style="background: linear-gradient(135deg, #ff00c8, #00eeff); display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-car" style="font-size: 5rem; color: white; text-shadow: 0 0 10px #fff;"></i>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>Driver Drowsiness Detection System</h3>
-                    <p>A real-time computer vision-based system that detects and alerts drivers of potential drowsiness while driving. The system uses OpenCV to analyze facial expressions and eye movements to determine the level of drowsiness.</p>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>OpenCV</span>
-                        <span>Computer Vision</span>
-                        <span>SQLite3</span>
-                    </div>
-                </div>
-                <button class="view-project">View Project <i class="fas fa-arrow-right"></i></button>
-            </div>
-            <div class="project-card">
-                <div class="project-img-container">
-                    <div class="neon-bg project-img" style="background: linear-gradient(135deg, #00ffbb, #ff00c8); display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-hard-hat" style="font-size: 5rem; color: white; text-shadow: 0 0 10px #fff;"></i>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>personal Portfolio</h3>
-                    <p>A responsive portfolio website with dark/light mode and animations. Built with HTML5, CSS3, and JavaScript for optimal presentation.</p>
-                    <div class="project-tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
-                <button class="view-project">View Project <i class="fas fa-arrow-right"></i></button>
-            </div>
-        </section>
-
-        <!-- Skills Section - Optimized with consistent data attributes -->
-        <section id="skills" class="animation-container">
-            <h2>Skills</h2>
+        <section id="skills" class="section">
+            <h2 class="section-title">My Skills</h2>
             <div class="skills-grid">
+                <!-- Programming Skills -->
                 <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <h3><i class="fas fa-code" aria-hidden="true"></i> Programming</h3>
                     <div class="skill-item">
                         <div class="skill-info">
                             <span>Java</span>
                             <span class="skill-level">90%</span>
                         </div>
                         <div class="skill-progress" data-width="90%">
-                            <div class="skill-progress-bar"></div>
+                            <div class="skill-progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-info">
                             <span>Python</span>
-                            <span class="skill-level">85%</span>
+                            <span class="skill-level">80%</span>
                         </div>
-                        <div class="skill-progress" data-width="85%">
-                            <div class="skill-progress-bar"></div>
+                        <div class="skill-progress" data-width="80%">
+                            <div class="skill-progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-info">
-                            <span>JavaScript</span>
+                            <span>C Programming</span>
+                            <span class="skill-level">85%</span>
+                        </div>
+                        <div class="skill-progress" data-width="85%">
+                            <div class="skill-progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>C++ Programming</span>
                             <span class="skill-level">80%</span>
                         </div>
                         <div class="skill-progress" data-width="80%">
-                            <div class="skill-progress-bar"></div>
+                            <div class="skill-progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
                 
+                <!-- Web Development Skills -->
                 <div class="skill-category">
-                    <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
+                    <h3><i class="fas fa-laptop-code" aria-hidden="true"></i> Web Development</h3>
                     <div class="skill-item">
                         <div class="skill-info">
                             <span>HTML & CSS</span>
                             <span class="skill-level">90%</span>
                         </div>
                         <div class="skill-progress" data-width="90%">
-                            <div class="skill-progress-bar"></div>
+                            <div class="skill-progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span class="skill-level">85%</span>
+                        </div>
+                        <div class="skill-progress" data-width="85%">
+                            <div class="skill-progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-info">
                             <span>React</span>
-                            <span class="skill-level">75%</span>
+                            <span class="skill-level">70%</span>
                         </div>
-                        <div class="skill-progress" data-width="75%">
-                            <div class="skill-progress-bar"></div>
+                        <div class="skill-progress" data-width="70%">
+                            <div class="skill-progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div class="skill-item">
@@ -248,29 +132,30 @@
                             <span class="skill-level">70%</span>
                         </div>
                         <div class="skill-progress" data-width="70%">
-                            <div class="skill-progress-bar"></div>
+                            <div class="skill-progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
                 
+                <!-- AI/ML Skills -->
                 <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> AI/ML</h3>
+                    <h3><i class="fas fa-brain" aria-hidden="true"></i> AI/ML</h3>
                     <div class="skill-item">
                         <div class="skill-info">
                             <span>Computer Vision</span>
                             <span class="skill-level">80%</span>
                         </div>
                         <div class="skill-progress" data-width="80%">
-                            <div class="skill-progress-bar"></div>
+                            <div class="skill-progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-info">
                             <span>OpenCV</span>
-                            <span class="skill-level">85%</span>
+                            <span class="skill-level">80%</span>
                         </div>
-                        <div class="skill-progress" data-width="85%">
-                            <div class="skill-progress-bar"></div>
+                        <div class="skill-progress" data-width="80%">
+                            <div class="skill-progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div class="skill-item">
@@ -279,20 +164,21 @@
                             <span class="skill-level">75%</span>
                         </div>
                         <div class="skill-progress" data-width="75%">
-                            <div class="skill-progress-bar"></div>
+                            <div class="skill-progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
                 
+                <!-- Database Skills -->
                 <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <h3><i class="fas fa-database" aria-hidden="true"></i> Databases</h3>
                     <div class="skill-item">
                         <div class="skill-info">
                             <span>SQLite</span>
                             <span class="skill-level">85%</span>
                         </div>
                         <div class="skill-progress" data-width="85%">
-                            <div class="skill-progress-bar"></div>
+                            <div class="skill-progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div class="skill-item">
@@ -301,7 +187,7 @@
                             <span class="skill-level">80%</span>
                         </div>
                         <div class="skill-progress" data-width="80%">
-                            <div class="skill-progress-bar"></div>
+                            <div class="skill-progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div class="skill-item">
@@ -310,109 +196,104 @@
                             <span class="skill-level">70%</span>
                         </div>
                         <div class="skill-progress" data-width="70%">
-                            <div class="skill-progress-bar"></div>
+                            <div class="skill-progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section - Add form validation -->
-        <section id="contact" class="animation-container">
-            <h2>Contact Me</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Email</h3>
-                            <p><a href="mailto:vk0533933@gmail.com">vk0533933@gmail.com</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>LinkedIn</h3>
-                            <p><a href="https://linkedin.com/in/vamsi-kummari-74577b280" target="_blank" rel="noopener">vamsi-kummari-74577b280</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>GitHub</h3>
-                            <p><a href="https://github.com/Vamsi594" target="_blank" rel="noopener">Vamsi594</a></p>
+        <section id="projects" class="section">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Driver Drowsiness Detection</h3>
+                        <p>Real-time computer vision system using OpenCV to monitor driver alertness.</p>
+                        <div class="project-tags">
+                            <span class="tag-python">Python</span>
+                            <span class="tag-opencv">OpenCV</span>
+                            <span class="tag-ai">Computer Vision</span>
+                            <span class="tag-sqlite">SQLite3</span>
+                        </div>                    
+                        <div class="project-links">
+                            <a href="#" class="project-btn" aria-label="View Driver Drowsiness Detection project live">View Live</a>
+                            <a href="#" class="project-btn" aria-label="View Driver Drowsiness Detection source code">Source Code</a>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form-container">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required class="neon-input" minlength="2" maxlength="100">
-                            <div class="input-glow"></div>
+                
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Personal Portfolio</h3>
+                        <p>A responsive portfolio showcasing my projects and skills, built with modern web technologies.</p>
+                        <div class="project-tags">
+                            <span class="tag-python">HTML</span>
+                            <span class="tag-opencv">CSS</span>
+                            <span class="tag-ai">JavaScript</span>
+                        </div> 
+                        <div class="project-links">
+                            <a href="#" class="project-btn" aria-label="View Personal Portfolio live">View Live</a>
+                            <a href="#" class="project-btn" aria-label="View Personal Portfolio source code">Source Code</a>
                         </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required class="neon-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                            <div class="input-glow"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" required class="neon-input" rows="4" minlength="10" maxlength="500"></textarea>
-                            <div class="input-glow"></div>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-container">
+                <form id="contact-form" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div class="social-links">
+                    <a href="https://github.com/Vamsi594" class="social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://linkedin.com/in/vamsi-kummari-74577b280" class="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="mailto:vk0533933@gmail.com" class="social-link">Email</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer - Add dynamic year -->
-    <footer>
-        <div class="container">
-            <div class="footer-section">
-                <h3>About Me</h3>
-                <p>Computer Science Engineer passionate about creating innovative solutions and building cutting-edge applications.</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Kummari Vamsi</h3>
+                <p>Full Stack Developer & AI Enthusiast</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Details</h4>
+                <p><i class="fas fa-envelope" aria-hidden="true"></i> vk0533933@gmail.com</p>
+                <p><i class="fas fa-phone" aria-hidden="true"></i> +91 6301234567</p>
+                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Hyderabad, India</p>
+            </div>
+            <div class="footer-social">
+                <h4>Connect With Me</h4>
                 <div class="social-icons">
-                    <a href="https://github.com/Vamsi594" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/vamsi-kummari-74577b280" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/Vamsi594" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://linkedin.com/in/vamsi-kummari-74577b280" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="mailto:vk0533933@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
                 </div>
             </div>
-            
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
-                    <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
-                    <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
-                    <li><a href="#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
-                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Contact Info</h3>
-                <ul class="footer-links">
-                    <li><a href="mailto:vk0533933@gmail.com"><i class="fas fa-envelope"></i> vk0533933@gmail.com</a></li>
-                    <li><a href="tel:+917569764011"><i class="fas fa-phone"></i> +91 7569764011</a></li>
-                    <li><i class="fas fa-map-marker-alt"></i> Andhra Pradesh, India</li>
-                </ul>
-            </div>
         </div>
-        
         <div class="footer-bottom">
-            <p>&copy; <span id="current-year"></span> Kummari Vamsi. All Rights Reserved.</p>
+            <p>&copy; 2023 Kummari Vamsi. All rights reserved.</p>
         </div>
     </footer>
-    
-    <!-- Add inline script to set current year (avoid flash of wrong year) -->
-    <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
